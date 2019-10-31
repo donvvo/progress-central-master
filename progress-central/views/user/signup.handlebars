@@ -1,0 +1,60 @@
+<div class="col-md-6 col-md-offset-3">
+  <h2 class="font-bold no-top-margin">Welcome to Progress Bound</h2>
+</div>
+<div class="col-md-6 col-md-offset-3">
+  <div class="ibox-content">
+    <form class="m-t" role="form" action="/signup/{{invite_key}}" method="post">
+      <div class="form-group">
+        <p>Please fill out below forms to active the account associated with this email: </p>
+        <h4>{{email}}</h4>
+      </div>
+      {{#if errors.first_name}}
+        <label id="first_name-error" class="error" for="first_name">{{errors.first_name.msg}}</label>
+      {{/if}}
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="First Name" name="first_name" required>
+      </div>
+      {{#if errors.last_name}}
+        <label id="last_name-error" class="error" for="last_name">{{errors.last_name.msg}}</label>
+      {{/if}}
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Last Name" name="last_name" required>
+      </div>
+      {{#if errors.old_password}}
+        <label id="old_password-error" class="error" for="old_password">{{errors.old_password.msg}}</label>
+      {{/if}}
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password" name="old_password" required>
+      </div>
+      <p>Password must be at least 8 characters long and should contain at least one digit and a character.</p>
+      {{#if errors.new_password}}
+        <label id="new_password-error" class="error" for="new_password">{{errors.new_password.msg}}</label>
+      {{/if}}
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="New Password" name="new_password" required>
+      </div>
+      {{#if errors.confirm_password}}
+        <label id="confirm_password-error" class="error" for="confirm_password">{{errors.confirm_password.msg}}</label>
+      {{/if}}
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Confirm New Password" name="confirm_password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary block full-width m-b">Signup</button>
+
+      <a href="/login">
+        <small>Already have an account?</small>
+      </a>
+    </form>
+    <p class="m-t">
+    </p>
+  </div>
+</div>
+
+{{#section 'javascript'}}
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('form.m-t').validate()
+  }) 
+</script>
+{{/section}}

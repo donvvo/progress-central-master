@@ -1,0 +1,127 @@
+.no-top-margin {
+  margin-top: 0;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 9999;
+}
+
+/* Course list */
+.project-list td.project-title {
+  min-width: 120px;
+}
+.project-list td.project-actions {
+  min-width: 100px;
+}
+@media (max-width: 900px) {
+  .project-list td.project-description {
+    display: none;
+  }
+}
+
+/* Student list */
+.clients-list .tab-pane {
+  height: 300px;
+}
+.client-detail {
+  height: 200px;
+}
+
+/* Cropper */
+.img-preview-square {
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+}
+.img-preview-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.image-crop img {
+  max-width: 100%
+}
+
+/* Profile thumbnail */
+.img-circle.profile-thumbnail {
+  width: 48px;
+}
+
+/* Notifications */
+.notification-unread {
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.media-body .panel-heading {
+  color: #676a6c;
+}
+.feed-element {
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+/* Buttons with margin */
+.btn.btn-margin {
+  margin: 5px;
+}
+
+/* Left navbar */
+.nav > li.active {
+  border-left: 4px solid #b59a5a;
+}
+
+/* Delete file button */
+a.delete-file {
+  cursor: pointer;
+  margin-left: 5px;
+  color: #c4c4c4;
+}
+
+/* Lecture video input */
+#lecture-video {
+  display: inline-block;
+}
+
+/* Lecture pdf input */
+#lecture-pdf {
+  display: inline-block;
+}
+
+/* Button color */
+.btn-primary:hover {
+  background-color: #B18D39;
+  border-color: #B18D39;
+}
+
+@media (min-width: 768px) {
+  .ibox.registered-user-profile-box .tab-pane {
+    height: 330px;
+  }
+}
+
+.wrapper-content {
+  padding: 10px 10px 30px 10px;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-default .special_link a:hover {
+  background-color: #B18D39 !important;
+}
+
+.ibox-title {
+  padding: 11px 15px 10px;
+}
+
+.ibox-title h5 {
+  margin: 10px 0 10px;
+}
